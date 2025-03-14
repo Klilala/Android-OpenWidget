@@ -1,4 +1,5 @@
 Introduction
+
 Welcome to Android-OpenWidget, an open-source project initiated by the Klilala MBaaS Team. This project aims to provide a collection of high-quality, reusable Android UI components and functional widgets, helping developers build modern and efficient Android applications with ease.
 
 Why Android-OpenWidget?
@@ -83,6 +84,7 @@ The Android-OpenWidget library provides a set of reusable UI components to enhan
 
 The SwipeDrawer widget is a customizable side navigation drawer that allows users to swipe from the edges to reveal additional options, settings, or menus. It is designed to be lightweight, smooth, and easy to integrate into any Android project.
 
+
 ✨ Features
 
 Supports left, right, top, and bottom swipe gestures.
@@ -92,6 +94,7 @@ Fully customizable width, background, animations, and swipe sensitivity.
 Works seamlessly with both fragments and activities.
 
 Compatible with Jetpack Compose and View-based UI.
+
 
 
  📌 Basic Usage (XML-based)
