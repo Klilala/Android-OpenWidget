@@ -7,19 +7,30 @@ In modern Android development, efficiency and modularization are crucial. Androi
 
 Key Features
 📌 Reusable Components – Ready-to-use widgets for UI design and functionality enhancement.
+
 🚀 Optimized Performance – Components built for smooth rendering and minimal resource consumption.
+
 🔄 Modular & Extensible – Easily integrate and customize based on your project needs.
+
 🛠 Plug & Play – Simple APIs for quick implementation in your Android project.
+
 🎨 Customizable UI – Theme-aware components that adapt to different design styles.
+
 📡 Community-Driven – Contributions welcome! We actively maintain and evolve the project with developer feedback.
+
 
 Who Can Benefit?
 📱 Android Developers looking for pre-built, customizable UI components.
+
 🏢 Enterprises & Startups aiming for rapid UI prototyping and scalable app development.
+
 🎓 Students & Researchers exploring modular Android UI design and implementation.
+
 💡 Open-Source Enthusiasts interested in contributing to a growing widget library.
 
 Join us in building a developer-friendly, efficient, and scalable Android UI component ecosystem! 🚀
+
+
 
 
 Features | Key Highlights
@@ -53,3 +64,100 @@ Regular updates and long-term maintenance to align with the latest Android devel
 🌍 7. Open-Source & Community-Driven
 Fully open-source under the Apache 2.0 license, allowing free commercial use.
 Actively encourages contributions, feature enhancements, and bug fixes from developers worldwide.
+
+
+Components Overview | 组件列表
+
+The Android-OpenWidget library provides a set of reusable UI components to enhance the development of Android applications. Below is an overview of one of the available widgets:
+
+🛠 WidgetA: SwipeDrawer (侧滑页)
+
+The SwipeDrawer widget is a customizable side navigation drawer that allows users to swipe from the edges to reveal additional options, settings, or menus. It is designed to be lightweight, smooth, and easy to integrate into any Android project.
+
+✨ Features
+Supports left, right, top, and bottom swipe gestures.
+
+Fully customizable width, background, animations, and swipe sensitivity.
+
+Works seamlessly with both fragments and activities.
+
+Compatible with Jetpack Compose and View-based UI.
+
+
+ 📌 Basic Usage (XML-based)
+
+```XML
+ <com.klilala.widget.SwipeDrawer
+    android:id="@+id/swipeDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:drawerSide="left"
+    app:drawerWidth="300dp"
+    app:enableGesture="true">
+
+    <!-- Content inside the drawer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SwipeDrawer Menu"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close Drawer"
+            android:onClick="closeDrawer"/>
+    </LinearLayout>
+
+</com.klilala.widget.SwipeDrawer>
+```
+
+
+📌 Usage in Activity (Kotlin-based)
+
+```Kotlin
+class MainActivity : AppCompatActivity() {
+    private lateinit var swipeDrawer: SwipeDrawer
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        swipeDrawer = findViewById(R.id.swipeDrawer)
+
+        // Open drawer on button click
+        findViewById<Button>(R.id.openDrawerButton).setOnClickListener {
+            swipeDrawer.open()
+        }
+
+        // Close drawer
+        findViewById<Button>(R.id.closeDrawerButton).setOnClickListener {
+            swipeDrawer.close()
+        }
+    }
+}
+```
+
+🎨 Customization Options
+app:drawerSide="left|right|top|bottom" → Defines the swipe direction.
+
+app:drawerWidth="300dp" → Sets the width of the drawer.
+
+app:enableGesture="true|false" → Enables or disables swipe gestures.
+
+swipeDrawer.open() → Programmatically opens the drawer.
+
+swipeDrawer.close() → Programmatically closes the drawer.
+
+
+
+
+ 
