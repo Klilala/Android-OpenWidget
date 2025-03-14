@@ -120,20 +120,20 @@ Trademark Notice | 商标声明
 
 Klilala, KlilalaGroup, and KlilalaMBaaS are registered trademarks or trademarks of Klilala Group.
 
-	•	The use of these trademarks in this open-source project does not grant any rights to use them beyond this project.
+The use of these trademarks in this open-source project does not grant any rights to use them beyond this project.
 
-	•	Any use of these trademarks must comply with Klilala Group’s trademark policies and should not imply any affiliation or endorsement without permission.
+Any use of these trademarks must comply with Klilala Group’s trademark policies and should not imply any affiliation or endorsement without permission.
 
-	•	Unauthorized or misleading use of these trademarks for commercial purposes is strictly prohibited.
+Unauthorized or misleading use of these trademarks for commercial purposes is strictly prohibited.
 
 For trademark inquiries, please contact:group@klilala-inc.com
 
 
 📜 How to Use This License
 
-	•	Copy this LICENSE file into the root of your repository.
+Copy this LICENSE file into the root of your repository.
 
-	•	Add a header comment in all source files:
+Add a header comment in all source files:
 ```java
 /*
  * Copyright 2024 Klilala MBaaS Team
